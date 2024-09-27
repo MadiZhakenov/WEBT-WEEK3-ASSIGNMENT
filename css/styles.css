@@ -1,32 +1,30 @@
 body{
-    margin: 0;
     font-family: "Inria Sans", sans-serif;
     font-weight: 300;
     font-style: normal;
     background-color: #f4f4f4;
     color: #333;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 header{
     font-size: 18px;
 }
+
 footer{
     font-size: 18px;
 }
 
 .carousel-inner img {
-    max-height: 400px;
+    height: 400px;
     object-fit: scale-down;
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: transparent;
-    border-radius: 50%;
     width: 30px;
     height: 30px;
+    filter: invert(50%);
 }
 
 
@@ -38,9 +36,9 @@ footer{
     text-decoration: none;
     color: #3498db
 }
+
 .card-img-top {
     width: 80%;
-    height: auto;
 }
 
 .product-cost{
@@ -54,6 +52,7 @@ footer{
     margin: 0 15px;
     position: relative;
 }
+
 .nav-link::before{
     content: "";
     position: absolute;
@@ -64,6 +63,7 @@ footer{
     height: 2px;
     transition: width 0.3s ease;
 }
+
 .nav-link:hover::before{
     width: 100%;
 }
@@ -72,11 +72,9 @@ footer{
 }
 
 .main-section{
-    background-color: #f4f4f4;
-    color: rgb(0, 0, 0);
-    text-align: center;
     padding: 100px 20px;
 }
+
 .main-section h2{
     font-size: 48px;
     margin-bottom: 10px;
@@ -86,21 +84,8 @@ footer{
     margin-bottom: 20px;
 }
 
-.featured-products{
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 40px;
-}
-
 .section-heading{
-    text-align: center;
     font-size: 32px;
-    margin-bottom: 20px;
-}
-
-
-.product-item{
-    text-align: center;
 }
 
 .product-item-image{
@@ -110,31 +95,9 @@ footer{
     border-radius: 8px;
 }
 
-.product-image{
-    width: 80%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-}
-.product-button{
-    display: block;
-    margin-top: 10px;
-    background-color: #e74c3c;
-    color: white;
-    padding: 8px 12px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.contact-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 .contact-details, .contact-form-container {
     width: 50%;
     margin: auto;
-    margin-top: 10px;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -151,10 +114,6 @@ footer{
     margin-bottom: 10px;
 }
 
-#contact-form {
-    display: flex;
-    flex-direction: column;
-}
 #contact-form label {
     font-size: 18px;
     margin-bottom: 10px;
@@ -166,6 +125,10 @@ footer{
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+}
+
+.custom-button{
+    width: 100%;
 }
 
 #message{
